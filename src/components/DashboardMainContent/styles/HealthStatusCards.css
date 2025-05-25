@@ -1,0 +1,70 @@
+#health-cards {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.health-card {
+  width: 180px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #f8f9fd;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #161146;
+}
+
+.card-date {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  height: 0.5rem;
+  background-color: #e0e0e0;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.progress-fill.green {
+  background-color: #7ed2c3;
+}
+
+.progress-fill.red {
+  background-color: #ff7d5e;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #health-cards {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}

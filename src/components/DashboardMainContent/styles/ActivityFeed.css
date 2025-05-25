@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 2);
+  padding: 0.5rem 1rem;
+  height: 10rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background-color: #f6faff;
+  padding: 0 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -1rem;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1e1e2f;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  color: #b0b2b6;
+}
+
+.chart {
+  display: flex;
+  gap: 1.975rem;
+  align-items: flex-end;
+  height: 6.25rem;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bars {
+  display: flex;
+  flex-direction: row;
+  gap: 0.475rem;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 0.25rem;
+  border-radius: 0.125rem;
+}
+
+.gray {
+  background-color: #e0e0e0;
+}
+
+.blue {
+  background-color: #3b3486;
+}
+
+.teal {
+  background-color: #00cfc8;
+}
+
+.split-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weekdays {
+  display: flex;
+  margin-top: 0.125rem;
+  padding-left: 0.625rem;
+  width: max-content;
+  gap: 3.5rem;
+}
+
+.day-label-activity {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #b0b2b6;
+}
+
+/* CSS for tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-top: 2rem;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+  .chart {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .weekdays {
+    flex-direction: column;
+    margin-top: -6rem;
+    gap: 1.8rem;
+    margin-bottom: 0.4rem;
+    margin-left: 1.5rem;
+  }
+  .day {
+    rotate: 90deg;
+    margin: -1.5rem;
+  }
+  .bars {
+    gap: 0.2rem;
+  }
+}

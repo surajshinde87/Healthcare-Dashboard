@@ -1,0 +1,168 @@
+.calendar-container {
+  background-color: #f8f9fd;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.month-title {
+  font-weight: 600;
+  color: #161146;
+  font-size: 1rem;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #161146;
+  cursor: pointer;
+}
+
+.calendar-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+}
+
+.day-name {
+  font-size: 0.9rem;
+  color: #161146;
+  padding: 0.3rem 0;
+  font-weight: 500;
+}
+
+.day-number {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #161146;
+  margin-bottom: 0.5rem;
+}
+
+.appointments {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.time-slot {
+  font-size: 0.75rem;
+  color: #161146;
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.time-slot.highlighted {
+  background-color: #3932ad;
+  color: white;
+}
+
+.active {
+  background-color: rgba(78, 110, 253, 0.05);
+  border-radius: 1rem;
+}
+
+.faded {
+  color: #ccc;
+  opacity: 0.5;
+}
+.faded .time-slot .active {
+  width: 100px;
+}
+
+.appointment-details-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.appointment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.appointment-card.blue {
+  background: #3932ad;
+  color: white;
+}
+.blue .title {
+  color: white;
+}
+
+.appointment-card.light {
+  background: #dce4fa;
+  color: #161146;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.title {
+  margin: 0.5rem 0rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.time {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.doctor {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-left: 0.75rem;
+}
+
+/* Mobile CSS */
+@media (max-width: 600px) {
+  .calendar-grid {
+    overflow-x: auto;
+    gap: 1rem;
+  }
+
+  .calendar-day {
+    min-width: 5rem;
+    flex: 0 0 auto;
+  }
+  .appointment-details-container {
+    margin-top: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

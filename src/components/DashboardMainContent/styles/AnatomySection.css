@@ -1,0 +1,253 @@
+#anatomy-section {
+  height: 100%;
+  background-color: #f6faff;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  position: relative;
+}
+#human-anatomy-image {
+  height: 50vh;
+}
+
+.magnifying-glass {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #b9bbbf;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.body-scanner {
+  width: 35px;
+  height: 40px;
+  position: absolute;
+  overflow: hidden;
+}
+.heart {
+  left: 48%;
+  top: 20%;
+}
+.leg {
+  left: 39%;
+  bottom: 30%;
+}
+
+/* Heart Sacnning Text */
+.scanning-text {
+  background-color: #3932ad;
+  position: absolute;
+  height: 2rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+  border-radius: 0.6rem;
+  padding: 0 0.2rem;
+  color: rgba(245, 245, 245, 0.776);
+  gap: 0.3rem;
+  box-shadow: 0px 0px 2px black;
+}
+.healty-heart {
+  left: 62%;
+  top: 20%;
+}
+.healty-heart img {
+  height: 1.2rem;
+}
+
+.healty-leg {
+  background-color: #28d7e5;
+  color: #3a34a3;
+  left: -5%;
+  bottom: 30%;
+}
+.healty-leg img {
+  height: 1.2rem;
+}
+
+.corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #3a34a3;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 8px 0 0 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 0 8px 0 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+  border-radius: 0 0 0 8px;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 0 8px 0;
+}
+
+.scanner-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #3a34a3, transparent);
+  animation: scanLine 2s linear infinite;
+}
+
+@keyframes scanLine {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #anatomy-section {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    flex-direction: column;
+    border-radius: 1rem;
+  }
+
+  #human-anatomy-image {
+    height: 40vh;
+  }
+
+  .scanning-text {
+    font-size: 0.55rem;
+    width: 6rem;
+    height: 1.8rem;
+  }
+
+  .healty-heart img,
+  .healty-leg img {
+    height: 1rem;
+  }
+  .healty-heart {
+    left: 58%;
+    top: 22%;
+  }
+  .healty-leg {
+    left: 21%;
+  }
+
+  .heart {
+    left: 50%;
+    top: 22%;
+  }
+  .leg {
+    left: 44%;
+    bottom: 30%;
+  }
+
+  .body-scanner {
+    width: 30px;
+    height: 35px;
+  }
+
+  .corner {
+    width: 8px;
+    height: 8px;
+    border-width: 2px;
+  }
+
+  .scanner-line {
+    height: 2px;
+  }
+}
+
+/* Mobile CSS */
+@media (max-width: 600px) {
+  #anatomy-section {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+  }
+
+  #human-anatomy-image {
+    height: 40vh;
+  }
+
+  .magnifying-glass {
+    font-size: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .scanning-text {
+    font-size: 0.5rem;
+    width: 5.5rem;
+    height: 1.5rem;
+    padding: 0 0.2rem;
+    gap: 0.2rem;
+  }
+
+  .healty-heart img,
+  .healty-leg img {
+    height: 0.9rem;
+  }
+
+  .healty-heart {
+    left: 60%;
+    top: 25%;
+  }
+  .healty-leg {
+    left: 4%;
+  }
+
+  .heart {
+    left: 50%;
+    top: 25%;
+  }
+  .leg {
+    left: 40%;
+    bottom: 30%;
+  }
+  .body-scanner {
+    width: 20px;
+    height: 25px;
+  }
+
+  .corner {
+    width: 6px;
+    height: 6px;
+    border-width: 2px;
+  }
+
+  .scanner-line {
+    height: 2px;
+  }
+}

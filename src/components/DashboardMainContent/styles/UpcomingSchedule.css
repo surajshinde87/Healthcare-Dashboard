@@ -1,0 +1,30 @@
+.schedule-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #161146;
+  margin-bottom: 1rem;
+}
+
+.day-section {
+  margin-bottom: 0.5rem;
+}
+
+.day-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.card-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Mobile CSS */
+@media (max-width: 600px) {
+  .card-row {
+    justify-content: center;
+  }
+}
